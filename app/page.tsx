@@ -1,7 +1,10 @@
 import CursorEffects from "./CursorEffects";
 import ProfileChat from "./ProfileChat";
+import RecruiterTools from "./RecruiterTools";
+import { getRecruiterBriefing } from "@/lib/profile";
 
 export default function HomePage() {
+  const briefing = getRecruiterBriefing();
   return (
     <>
       <div className="cursor" aria-hidden="true"></div>
@@ -311,11 +314,40 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* AI BRIEFING — for recruiters */}
+        <section className="section" id="ai-briefing">
+          <div className="section-inner reveal">
+            <div className="section-header">
+              <span className="section-num">005</span>
+              <span className="section-title">AI Briefing</span>
+            </div>
+            <p className="rt-lead">
+              Got a JD? Drop my full profile into your AI of choice and ask for
+              a fit assessment. No install, no signup.
+            </p>
+            <p className="rt-body">
+              The briefing is auto-generated from{" "}
+              <a
+                href="/api/profile.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rt-link"
+              >
+                /api/profile.md
+              </a>
+              . Copy it or open it pre-filled in ChatGPT or Claude — paste
+              your role description right after, and the AI will tell you
+              whether to reach out.
+            </p>
+            <RecruiterTools briefing={briefing} />
+          </div>
+        </section>
+
         {/* CONTACT */}
         <section className="section section--contact" id="contact">
           <div className="section-inner reveal">
             <div className="section-header">
-              <span className="section-num">005</span>
+              <span className="section-num">006</span>
               <span className="section-title">Contact</span>
             </div>
             <h2 className="contact-heading">

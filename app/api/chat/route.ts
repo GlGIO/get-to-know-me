@@ -1,5 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { getProfile } from "@/lib/profile";
+import { getChatContext } from "@/lib/profile";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -29,11 +29,11 @@ export async function POST(request: Request): Promise<Response> {
     return new Response("messages[] is required", { status: 400 });
   }
 
-  const { context: system } = getProfile();
+  const system = getChatContext();
   const client = new Anthropic({ apiKey });
   const stream = await client.messages.stream({
     model: "claude-haiku-4-5-20251001",
-    max_tokens: 1024,
+    max_tokens: 384,
     system,
     messages,
   });

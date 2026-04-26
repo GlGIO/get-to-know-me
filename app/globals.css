@@ -392,6 +392,71 @@ nav {
 }
 
 /* ============================================================
+   AI BRIEFING (recruiter tools)
+============================================================ */
+.rt-lead {
+  font-family: var(--font-d);
+  font-size: clamp(1.125rem, 2.4vw, 1.625rem);
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+  max-width: 42ch;
+}
+.rt-body {
+  font-size: 0.9375rem;
+  color: var(--fg-2);
+  line-height: 1.78;
+  max-width: 60ch;
+  margin-bottom: 2rem;
+}
+.rt-link {
+  color: var(--accent);
+  border-bottom: 1px dashed rgba(184,255,60,0.4);
+  transition: border-color 0.2s;
+}
+.rt-link:hover { border-bottom-color: var(--accent); }
+
+.rt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.rt-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-b);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fg);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
+  cursor: none;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.rt-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-d);
+}
+.rt-btn--primary {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+.rt-btn--primary:hover {
+  background: var(--accent);
+  color: var(--bg);
+  filter: brightness(1.1);
+}
+
+/* ============================================================
    CONTACT
 ============================================================ */
 .section--contact .section-inner {
