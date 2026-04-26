@@ -1,0 +1,46 @@
+Brazil
+Linkedin
+     Giovanni Sandrini
++55 47 99733 3604
+sandrini.dev@gmail.com
+
+Senior Mobile Engineer with 5 years of experience building and scaling Flutter applications in high-impact environments across e-commerce, logistics, and B2B operations. Strong background in mobile architecture, modularization, performance, and resilient app flows, with hands-on experience designing shared foundations that make complex products safer and faster to evolve. Delivered mobile solutions supporting 10K+ users, 500+ sellers, and business operations tied to $100M+ annual GMV. Also bring solid full-stack experience across TypeScript ecosystems (Node.js, React, Nuxt), enabling strong collaboration across platform, product, and backend boundaries.
+Work Experience
+
+Mobile Engineer			 	YANDEH
+Apr 2025 – Present				Business Tech in retail — $100M annual GMV, 500+ sellers
+
+Built and shipped an AI-powered workflow embedded into the mobile app (Flutter + TS services) to generate campaign-ready promotional images, reducing production time by 95% (60 min > 3 min)
+Owned critical mobile journeys end-to-end; optimized the payment flow (cards + Pix) by improving validation, error handling, and recovery states, increasing conversion by up to 10%.
+Designed a modular app structure (feature modules + shared core) and improved state management to reduce regressions and make complex flows safer to evolve.
+Led technical discussions and refactors to support Flutter multi-platform (mobile/web/desktop), strengthening modular architecture and SOLID/Clean Architecture practices to improve maintainability.
+	
+Mobile Engineer				GRUPPE 
+Apr 2024 – Apr 2025				Software House — 50 logistics clients 
+
+Built and maintained a CRM processing 100 orders/day and moving over $1M USD/month, ensuring stable execution of critical operational workflows.
+Strengthened core foundations: auth/session handling, typed networking layer, caching strategy, and structured error handling for offline-first scenarios.
+Bridged the gap between business and engineering by translating complex logistics requirements into a technical roadmap, ensuring 100% on-time delivery for critical milestones.
+Designed and implemented a dynamic discount rules engine leveraging a NoSQL data model to generate per-order-field pricing rules at runtime, enabling customers to create highly targeted sales campaigns and unlocking a critical capability not supported by their previous software.
+ 
+Mobile Engineer				TECADI
+Feb 2023 – Mar 2024				Logistics operator - 300K+ m² of warehousing
+
+Delivered an offline-first mobile checklist platform used in 100+ daily field operations, enabling teams to create and run different checklist types via configurable templates, with resilient sync for low-connectivity devices.
+Implemented a modular white-label architecture (Clean Architecture) with configurable flows and branding, enabling reuse across multiple clients and improving maintainability.
+Integrated Google ML Kit to assist cargo inspections with real-time image/data analysis, reducing manual verification time by 75% and improving data consistency.
+
+
+Mobile Engineer				GASS 	
+Aug 2021 – Feb 2023				Restaurant Management Consultancy
+
+
+Built a Flutter application that brought together 60+ management tools into a single experience, improving day-to-day efficiency for 200+ B2B clients.
+Delivered no-code MVPs to validate new workflows quickly, then migrated the best-performing solutions into the Flutter app roadmap.
+Led enablement sessions and trained consultants to onboard clients and adopt the app effectively, improving rollout consistency and reducing support friction.
+Technologies and Languages
+Languages:	Dart, TypeScript, JavaScript, Android/iOS fundamentals
+Technologies: 	Flutter, React, Node, Nest, Express, Serverless, Nuxt, Firebase, PostgreSQL, MongoDB, Redis
+Education and Certifications
+Specialization in Software Engineering, Descomplica, Brazil. 	2025
+B.Sc. Engineering, Unisul, Brazil. 	2023

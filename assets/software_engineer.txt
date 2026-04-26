@@ -1,0 +1,48 @@
+Itajai, Brazil
++55 47 99733 3604
+     Giovanni Sandrini
+Linkedin
+sandrini.dev@gmail.com
+
+Full-stack Software Engineer with 5 years building e-commerce products. Shipped features used by 10K+ buyers and sellers and supporting $100M+ in annual GMV. Led the build of an AI-driven agentic platform that became the foundation for multiple products across the company.
+Expertise in the TypeScript ecosystem (Node.js, React, Nuxt) with a strong background in high-performance Mobile development (Flutter).
+Work Experience
+
+Senior Software Engineer			YANDEH
+Apr 2025 – Present				Business Tech in retail — $100M annual GMV, 500+ sellers
+
+Architected and shipped an AI agent (Nuxt + TypeScript) embedded in core product flows to generate campaign-ready promotional images, reducing production time by 95% (60 min > 3 min)
+Led refactors on the revenue-critical e-commerce app, improving architecture and modularization to make releases safer and onboarding faster cutting developer onboarding time from weeks to days.
+Owned features end-to-end across Flutter (mobile/web) and Node.js APIs, optimized the payment flow (cards and Pix) by improving validation and error handling, increasing conversion by up to 10%.
+Designed and implemented a custom state management architecture to improve cross-screen consistency and reduce UI regressions, increasing feature development speed by up to 16% and improving maintainability.
+
+Mid Level Software Engineer			GRUPPE	Apr 2024 – Apr 2025				Software House — 50 logistics clients 
+
+Built and maintained a CRM processing 100 orders/day and moving over $1M USD/month, ensuring stable execution of critical operational workflows.
+Engineered and scaled a serverless (AWS Lambda) Node.js backend, reducing monthly infrastructure cost by 30% through execution-path optimization, caching, and right-sizing memory/timeouts.
+Bridged the gap between business and engineering by translating complex logistics requirements into a technical roadmap, ensuring 100% on-time delivery for critical milestones.
+Designed and implemented a dynamic discount rules engine leveraging a NoSQL data model to generate per-order-field pricing rules at runtime, enabling customers to create highly targeted sales campaigns and unlocking a critical capability not supported by their previous software.
+ 
+Junior Software Engineer			TECADI  	Feb 2023 – Mar 2024				Logistics operator - 300K+ m² of warehousing
+
+Delivered an offline-first mobile checklist platform used in 100+ daily field operations, enabling teams to create and run different checklist types via configurable templates, with resilient sync for low-connectivity devices.
+Implemented a modular white-label architecture (Clean Architecture) with configurable flows and branding, enabling reuse across multiple clients and improving maintainability.
+Integrated Google ML Kit to assist cargo inspections with real-time image/data analysis, reducing manual verification time by 75% and improving data consistency.
+
+
+
+
+Mobile Developer				GASS	Aug 2021 – Feb 2023				Restaurant Management Consultancy
+
+
+Built a Flutter application that brought together 60+ management tools into a single experience, improving day-to-day efficiency for 200+ B2B clients.
+Delivered no-code MVPs to validate new workflows quickly, then migrated the best-performing solutions into the Flutter app roadmap.
+Led enablement sessions and trained consultants to onboard clients and adopt the app effectively, improving rollout consistency and reducing support friction.
+Technologies and Languages
+Languages: TypeScript, Dart, JavaScript, SQL.
+Backend: Node.js (Nest/Express), Serverless, PostgreSQL, Redis.
+Frontend/Mobile: Flutter, React, Vue/Nuxt.
+Tools/Cloud: AWS, Firebase, Docker, CI/CD.
+Education and Certifications
+Specialization in Software Engineering, Descomplica, Brazil. 	2025
+B.Sc. Engineering, Unisul, Brazil. 	2023

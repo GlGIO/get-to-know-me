@@ -1,0 +1,104 @@
+identity:
+  name: Giovanni Sandrini
+  title: Engineer · Builder · Maker
+  location: Itajaí, BR
+  bio: |
+    I build things from the ground up and see them through to production —
+    across mobile, web, and backend.
+
+summary: |
+  Five years shipping across e-commerce, logistics, and B2B. My work spans
+  Flutter, TypeScript, and Node.js, but the common thread is ownership — I
+  care about the whole thing: the architecture, the user experience, the
+  metrics after it ships. I'm drawn to problems where the engineering and
+  the product decision are the same conversation.
+
+experience:
+  - company: Yandeh
+    role: AI Campaign Generator (Tech Lead)
+    start: "2025"
+    description: |
+      Business Tech in Retail — $100M GMV. Architected and shipped an
+      AI-driven agentic workflow embedded in the core e-commerce platform
+      to generate campaign-ready promotional images, reducing production
+      time by 95% (60 min → 3 min). Owned the payment flow end-to-end
+      across Flutter and Node.js, increasing conversion by 10%.
+    stack: [TypeScript, Nuxt, Flutter, Node.js, AI Agents]
+    highlights:
+      - "Cut promotional asset production time 95% (60min → 3min)"
+      - "Owned payment flow end-to-end; +10% conversion"
+
+  - company: Gruppe
+    role: Logistics CRM at Scale
+    start: "2024"
+    end: "2025"
+    description: |
+      Software house serving 50 logistics clients. Built and maintained a
+      CRM processing 100+ orders/day and $1M+/month. Engineered a
+      serverless Node.js backend that cut infrastructure costs by 30%.
+      Translated complex logistics requirements into a technical roadmap —
+      100% on-time delivery for every milestone.
+    stack: [Node.js, AWS Lambda, Flutter, NoSQL]
+    highlights:
+      - "Processed $1M+/month in orders"
+      - "Cut infra cost 30% via serverless rearchitecture"
+      - "100% on-time delivery across milestones"
+
+  - company: Tecadi
+    role: Offline-First Field Platform (Mobile Engineer)
+    start: "2023"
+    end: "2024"
+    description: |
+      300K+ m² warehousing logistics. Delivered a mobile checklist platform
+      running 100+ daily field operations. Built for resilient offline sync
+      in low-connectivity environments. Integrated Google ML Kit for
+      real-time cargo inspections, cutting manual verification time by 75%.
+    stack: [Flutter, ML Kit, Offline-first, Clean Architecture]
+    highlights:
+      - "Cut manual cargo verification time 75% via ML Kit integration"
+      - "Resilient offline-first sync for low-connectivity warehouses"
+
+  - company: GASS
+    role: B2B Management Suite (Full-stack)
+    start: "2021"
+    end: "2023"
+    description: |
+      Restaurant management consultancy. Built a Flutter app consolidating
+      60+ management tools into a single experience for 200+ B2B clients.
+      Delivered no-code MVPs to validate new workflows quickly, then
+      migrated the best-performing solutions into the product roadmap.
+    stack: [Flutter, Firebase, No-code MVPs]
+    highlights:
+      - "Consolidated 60+ tools for 200+ B2B clients"
+      - "No-code MVP loop into product roadmap"
+
+skills:
+  primary: [TypeScript, Dart, Flutter, Node.js, NestJS, PostgreSQL]
+  secondary: [Nuxt, Vue, React, Astro, Redis, AWS Lambda, Firebase, Docker, CI/CD]
+  learning: [MCP, edge runtimes, AI agentic workflows]
+  notes: |
+    I reach for the boring, durable solution first. AI shows up when it
+    replaces real work — not as decoration.
+
+projects:
+  - name: AI Campaign Generator (Yandeh)
+    description: Agentic workflow turning briefs into campaign-ready promo images.
+    stack: [TypeScript, Nuxt, Flutter, Node.js, AI Agents]
+  - name: know-me
+    description: Open source AI package for developer portfolios — chat widget + MCP server.
+    stack: [TypeScript, React, MCP]
+
+availability:
+  status: open
+  preferredRoles: [Senior Full-stack, Tech Lead, Staff Engineer]
+  notes: Remote-friendly, BR / LatAm hours.
+
+links:
+  - label: GitHub
+    url: https://github.com/GlGIO
+  - label: LinkedIn
+    url: https://linkedin.com/in/giovannisandrini
+
+contact:
+  email: sandrini.dev@gmail.com
+  preferred: email
