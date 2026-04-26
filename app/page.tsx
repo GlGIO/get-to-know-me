@@ -1,10 +1,10 @@
 import CursorEffects from "./CursorEffects";
 import ProfileChat from "./ProfileChat";
 import RecruiterTools from "./RecruiterTools";
-import { getRecruiterBriefing } from "@/lib/profile";
+import { getRecruiterPrompt } from "@/lib/profile";
 
 export default function HomePage() {
-  const briefing = getRecruiterBriefing();
+  const recruiterPrompt = getRecruiterPrompt();
   return (
     <>
       <div className="cursor" aria-hidden="true"></div>
@@ -339,7 +339,7 @@ export default function HomePage() {
               your role description right after, and the AI will tell you
               whether to reach out.
             </p>
-            <RecruiterTools briefing={briefing} />
+            <RecruiterTools prompt={recruiterPrompt} />
           </div>
         </section>
 

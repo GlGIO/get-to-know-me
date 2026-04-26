@@ -11,11 +11,10 @@ Style rules — follow strictly:
 - Lead with the answer. No preambles like "Based on Giovanni's profile" or "Great question".
 - If the answer isn't in the facts below, say so in one sentence and point to the contact info.`;
 
-const RECRUITER_PERSONA = `You are about to receive a developer's profile, then a job description from a recruiter. Read the profile, wait for the JD, then answer four things in plain language: (1) is this candidate worth a screening call — yes/no with one sentence why; (2) which JD requirements they clearly hit, with profile evidence; (3) which look like gaps or assumptions worth checking; (4) two or three sharp screening questions to ask. Be concise. Don't pad.`;
-
 let cachedProfile: { profile: KnowMeProfile; context: string } | null = null;
 let cachedChatContext: string | null = null;
-let cachedBriefing: string | null = null;
+let cachedRecruiterPrompt: string | null = null;
+let cachedProfileText: string | null = null;
 
 export function getProfile(): { profile: KnowMeProfile; context: string } {
   if (cachedProfile) return cachedProfile;
@@ -26,6 +25,12 @@ export function getProfile(): { profile: KnowMeProfile; context: string } {
   return cachedProfile;
 }
 
+export function getProfileText(): string {
+  if (cachedProfileText) return cachedProfileText;
+  cachedProfileText = getProfile().context;
+  return cachedProfileText;
+}
+
 export function getChatContext(): string {
   if (cachedChatContext) return cachedChatContext;
   const { profile } = getProfile();
@@ -33,9 +38,32 @@ export function getChatContext(): string {
   return cachedChatContext;
 }
 
-export function getRecruiterBriefing(): string {
-  if (cachedBriefing) return cachedBriefing;
+export function getRecruiterPrompt(): string {
+  if (cachedRecruiterPrompt) return cachedRecruiterPrompt;
   const { profile } = getProfile();
-  cachedBriefing = buildContext(profile, { persona: RECRUITER_PERSONA });
-  return cachedBriefing;
+  const siteUrl = profile.siteUrl?.replace(/\/$/, "");
+  if (!siteUrl) throw new Error("know-me.yaml must include a `siteUrl` field.");
+
+  const name = profile.identity.name;
+  cachedRecruiterPrompt = `This is the developer profile of ${name}.
+
+Use whichever approach your environment supports:
+
+**Option A — MCP (preferred, if you can make HTTP POST requests):**
+Endpoint: POST ${siteUrl}/api/mcp
+
+Available tools:
+- get_profile — full structured profile (identity, experience, skills, projects, links)
+- get_skills — skills grouped by primary, secondary, and currently-learning
+- match_role — pass a job description, returns match score + gap analysis
+
+Start by listing tools:
+{"jsonrpc":"2.0","method":"tools/list","params":{},"id":1}
+
+**Option B — Simple fetch (fallback):**
+GET ${siteUrl}/api/profile.md
+
+Once you have the profile, I'll share a job description for fit assessment.`;
+
+  return cachedRecruiterPrompt;
 }

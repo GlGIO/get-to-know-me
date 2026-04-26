@@ -1,9 +1,9 @@
-import { getRecruiterBriefing } from "@/lib/profile";
+import { getProfileText } from "@/lib/profile";
 
 export const runtime = "nodejs";
 
 export function GET(): Response {
-  return new Response(getRecruiterBriefing(), {
+  return new Response(getProfileText(), {
     headers: {
       "Content-Type": "text/markdown; charset=utf-8",
       "Cache-Control": "public, max-age=300, s-maxage=300",
