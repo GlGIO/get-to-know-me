@@ -6,6 +6,7 @@ import WorkVideoPreview from "./WorkVideoPreview";
 import { getRecruiterPrompt } from "@/lib/profile";
 import abasteceShopImage from "@/assets/abastece_shop.png";
 import checklistImage from "@/assets/checklist_screenshot.png";
+import fotoMinha from "@/assets/Fotominha.png";
 
 export default function HomePage() {
   const recruiterPrompt = getRecruiterPrompt();
@@ -16,9 +17,7 @@ export default function HomePage() {
 
       <header className="nav-wrap">
         <nav>
-          <a href="/" className="nav-logo">
-            GA<span className="accent">.</span>
-          </a>
+          <a href="/" className="nav-wordmark">Giovanni Sandrini</a>
           <div className="nav-links">
             <a href="#about">About</a>
             <a href="#work">Work</a>
@@ -43,12 +42,26 @@ export default function HomePage() {
               <span className="hero-role">Engineer · Systems Thinker · Builder</span>
             </div>
 
-            <h1 className="hero-name">
-              <span className="hero-line">GIOVANNI</span>
-              <span className="hero-line">
-                SANDRINI<span className="accent">.</span>
-              </span>
-            </h1>
+            <div className="hero-split">
+              <div className="hero-photo-col">
+                <div className="hero-photo-wrap">
+                  <Image
+                    src={fotoMinha}
+                    alt="Giovanni Sandrini"
+                    fill
+                    sizes="360px"
+                    className="hero-photo"
+                    priority
+                  />
+                </div>
+              </div>
+              <h1 className="hero-name">
+                <span className="hero-line">GIOVANNI</span>
+                <span className="hero-line">
+                  SANDRINI<span className="accent">.</span>
+                </span>
+              </h1>
+            </div>
 
             <div className="hero-bottom">
               <div className="hero-data">
@@ -348,6 +361,7 @@ export default function HomePage() {
                     <div className="work-split-copy">
                       <div className="work-top">
                         <h3 className="work-title">Logi360 - Checklist</h3>
+                        <span className="work-period">2023 — 2024</span>
                       </div>
                       <p className="work-company">
                         <a
@@ -369,9 +383,6 @@ export default function HomePage() {
                       </p>
                     </div>
                     <div className="work-side-media">
-                      <span className="work-period work-period--stacked">
-                        2023 — 2024
-                      </span>
                       <a
                         href="https://play.google.com/store/apps/details?id=br.com.tecadilabs.checklist_app&hl=pt_BR"
                         target="_blank"
