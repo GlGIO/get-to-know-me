@@ -15,6 +15,7 @@ export default function ProfileChat() {
       ]}
       theme={{
         accent: "#b8ff3c",
+        onAccent: "#0f0f0f",
         background: "#0f0f0f",
         foreground: "#ededed",
         border: "#1c1c1c",
