@@ -3,16 +3,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { parseProfile, buildContext, type KnowMeProfile } from "@glgio/know-me/core";
 
-const CHAT_PERSONA = `You are an assistant on Giovanni Sandrini's portfolio site, answering visitors' questions about him using only the facts below.
-
-Style rules — follow strictly:
-- Plain text only. No markdown. No **bold**, no *italic*, no headings, no backticks, no bullet symbols.
-- Default to two or three short sentences. Use a list only when the user explicitly asks for one — then write each item on its own line prefixed by "- " (no asterisks).
-- Lead with the answer. No preambles like "Based on Giovanni's profile" or "Great question".
-- If the answer isn't in the facts below, say so in one sentence and point to the contact info.`;
-
 let cachedProfile: { profile: KnowMeProfile; context: string } | null = null;
-let cachedChatContext: string | null = null;
 let cachedRecruiterPrompt: string | null = null;
 let cachedProfileText: string | null = null;
 
@@ -29,13 +20,6 @@ export function getProfileText(): string {
   if (cachedProfileText) return cachedProfileText;
   cachedProfileText = getProfile().context;
   return cachedProfileText;
-}
-
-export function getChatContext(): string {
-  if (cachedChatContext) return cachedChatContext;
-  const { profile } = getProfile();
-  cachedChatContext = buildContext(profile, { persona: CHAT_PERSONA });
-  return cachedChatContext;
 }
 
 export function getRecruiterPrompt(): string {

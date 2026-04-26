@@ -1,94 +1,114 @@
 identity:
   name: Giovanni Sandrini
-  title: Engineer · Builder · Maker
+  title: Engineer · Systems Thinker · Builder
   location: Itajaí, BR
   bio: |
-    I build things from the ground up and see them through to production —
+    I build products from the ground up and see them through to production —
     across mobile, web, and backend.
 
-siteUrl: https://get-to-know-me-woad.vercel.app
+siteUrl: https://www.sandrinidev.com.br/
 
 summary: |
   Five years shipping across e-commerce, logistics, and B2B. My work spans
   Flutter, TypeScript, and Node.js, but the common thread is ownership — I
-  care about the whole thing: the architecture, the user experience, the
-  metrics after it ships. I'm drawn to problems where the engineering and
-  the product decision are the same conversation.
+  care about the whole system: architecture, UX, rollout, and the metrics
+  after it ships. I'm at my best in problems where the engineering and the
+  product decision are part of the same conversation.
 
 experience:
   - company: Yandeh
-    role: AI Campaign Generator (Tech Lead)
+    role: Product & Platform Engineer
     start: "2025"
     description: |
-      Business Tech in Retail — $100M GMV. Architected and shipped an
-      AI-driven agentic workflow embedded in the core e-commerce platform
-      to generate campaign-ready promotional images, reducing production
-      time by 95% (60 min → 3 min). Owned the payment flow end-to-end
-      across Flutter and Node.js, increasing conversion by 10%.
-    stack: [TypeScript, Nuxt, Flutter, Node.js, AI Agents]
+      Business Tech in Retail — $100M annual GMV, 500+ sellers. Shipped
+      across multiple product surfaces including Midia Pro, SmartCare, and
+      Abastece Shop. Architected and launched an AI-driven workflow to turn
+      campaign inputs into promotion-ready assets, cutting production time
+      by 95% (60 min → 3 min). Owned revenue-critical flows across Flutter,
+      Nuxt, and Node.js APIs, including payment improvements that increased
+      conversion by up to 10%. Strengthened modular architecture, custom
+      state management, and multi-platform support to reduce regressions and
+      make releases and onboarding faster.
+    stack: [TypeScript, Nuxt, Flutter, Node.js, AI Workflows, Payments]
     highlights:
-      - "Cut promotional asset production time 95% (60min → 3min)"
-      - "Owned payment flow end-to-end; +10% conversion"
+      - "Cut promotional asset production time 95% (60 min → 3 min)"
+      - "Owned payment flow improvements across app and APIs; +10% conversion"
+      - "Improved modular architecture and state management for safer releases"
+      - "Supported multi-platform evolution across mobile, web, and desktop"
 
   - company: Gruppe
-    role: Logistics CRM at Scale
+    role: Software Engineer
     start: "2024"
     end: "2025"
     description: |
       Software house serving 50 logistics clients. Built and maintained a
-      CRM processing 100+ orders/day and $1M+/month. Engineered a
-      serverless Node.js backend that cut infrastructure costs by 30%.
-      Translated complex logistics requirements into a technical roadmap —
-      100% on-time delivery for every milestone.
-    stack: [Node.js, AWS Lambda, Flutter, NoSQL]
+      seller-facing CRM processing 100+ orders/day and over $1M/month in
+      operations. Engineered and scaled a serverless Node.js backend that
+      cut infrastructure costs by 30%. Strengthened the product foundations
+      around auth, session handling, typed networking, caching, and error
+      flows. Designed a dynamic discount rules engine on top of a NoSQL
+      model, enabling targeted campaign logic that the previous software
+      could not support. Translated complex logistics requirements into a
+      technical roadmap with 100% on-time delivery on critical milestones.
+    stack: [Node.js, AWS Lambda, Flutter, NoSQL, Serverless, CRM]
     highlights:
       - "Processed $1M+/month in orders"
       - "Cut infra cost 30% via serverless rearchitecture"
-      - "100% on-time delivery across milestones"
+      - "Built dynamic discount rules engine for targeted campaigns"
+      - "100% on-time delivery across critical milestones"
 
-  - company: Tecadi
-    role: Offline-First Field Platform (Mobile Engineer)
+  - company: Tecadi Labs
+    role: Mobile Engineer
     start: "2023"
     end: "2024"
     description: |
-      300K+ m² warehousing logistics. Delivered a mobile checklist platform
-      running 100+ daily field operations. Built for resilient offline sync
-      in low-connectivity environments. Integrated Google ML Kit for
-      real-time cargo inspections, cutting manual verification time by 75%.
-    stack: [Flutter, ML Kit, Offline-first, Clean Architecture]
+      Logistics operator with 300K+ m² of warehousing. Delivered an
+      offline-first checklist platform used across 100+ daily field
+      operations, with configurable templates and resilient sync for
+      low-connectivity environments. Implemented a modular white-label
+      architecture with reusable flows and branding layers, improving reuse
+      across clients. Integrated Google ML Kit to support cargo inspections
+      with real-time image and data analysis, cutting manual verification
+      time by 75%.
+    stack: [Flutter, Offline-first, ML Kit, Clean Architecture, White-label]
     highlights:
+      - "Supported 100+ daily field operations with resilient offline sync"
+      - "Built modular white-label architecture for reuse across clients"
       - "Cut manual cargo verification time 75% via ML Kit integration"
-      - "Resilient offline-first sync for low-connectivity warehouses"
 
   - company: GASS
-    role: B2B Management Suite (Full-stack)
+    role: Mobile Engineer
     start: "2021"
     end: "2023"
     description: |
       Restaurant management consultancy. Built a Flutter app consolidating
       60+ management tools into a single experience for 200+ B2B clients.
-      Delivered no-code MVPs to validate new workflows quickly, then
-      migrated the best-performing solutions into the product roadmap.
-    stack: [Flutter, Firebase, No-code MVPs]
+      Delivered no-code MVPs to validate new workflows quickly, then moved
+      the strongest ideas into the product roadmap. Also led enablement with
+      consultants so client onboarding and adoption stayed consistent as the
+      app expanded.
+    stack: [Flutter, Firebase, No-code MVPs, Enablement]
     highlights:
       - "Consolidated 60+ tools for 200+ B2B clients"
-      - "No-code MVP loop into product roadmap"
+      - "Turned validated no-code MVPs into product roadmap inputs"
+      - "Trained consultants to improve rollout consistency and adoption"
 
 skills:
-  primary: [TypeScript, Dart, Flutter, Node.js, NestJS, PostgreSQL]
-  secondary: [Nuxt, Vue, React, Astro, Redis, AWS Lambda, Firebase, Docker, CI/CD]
+  primary: [TypeScript, Dart, Flutter, Node.js, React, Nuxt]
+  secondary: [NestJS, PostgreSQL, Redis, AWS Lambda, Firebase, Docker, CI/CD, Vue, Serverless]
   learning: [MCP, edge runtimes, AI agentic workflows]
   notes: |
     I reach for the boring, durable solution first. AI shows up when it
-    replaces real work — not as decoration.
+    removes real work, shortens feedback loops, or makes a product more
+    useful — not as decoration.
 
 projects:
-  - name: AI Campaign Generator (Yandeh)
-    description: Agentic workflow turning briefs into campaign-ready promo images.
-    stack: [TypeScript, Nuxt, Flutter, Node.js, AI Agents]
   - name: know-me
-    description: Open source AI package for developer portfolios — chat widget + MCP server.
+    description: Open source package for developer portfolios, combining a chat widget and MCP server so profile data can be queried directly by AI tools.
     stack: [TypeScript, React, MCP]
+  - name: Midia Pro
+    description: Product workflow for generating campaign-ready promotional assets with dramatically shorter production time and tighter iteration loops for commercial teams.
+    stack: [TypeScript, Nuxt, Flutter, Node.js, AI Workflows]
 
 availability:
   status: open

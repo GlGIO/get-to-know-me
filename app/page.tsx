@@ -1,7 +1,11 @@
+import Image from "next/image";
 import CursorEffects from "./CursorEffects";
 import ProfileChat from "./ProfileChat";
 import RecruiterTools from "./RecruiterTools";
+import WorkVideoPreview from "./WorkVideoPreview";
 import { getRecruiterPrompt } from "@/lib/profile";
+import abasteceShopImage from "@/assets/abastece_shop.png";
+import checklistImage from "@/assets/checklist_screenshot.png";
 
 export default function HomePage() {
   const recruiterPrompt = getRecruiterPrompt();
@@ -36,7 +40,7 @@ export default function HomePage() {
           <div className="hero-inner">
             <div className="hero-meta">
               <span className="hero-index">001</span>
-              <span className="hero-role">Engineer · Builder · Maker</span>
+              <span className="hero-role">Engineer · Systems Thinker · Builder</span>
             </div>
 
             <h1 className="hero-name">
@@ -55,7 +59,7 @@ export default function HomePage() {
                 <div className="data-div"></div>
                 <div className="data-item">
                   <span className="data-label">Focus</span>
-                  <span className="data-value">Full-stack & AI</span>
+                  <span className="data-value">Mobile, web & backend</span>
                 </div>
                 <div className="data-div"></div>
                 <div className="data-item">
@@ -106,14 +110,14 @@ export default function HomePage() {
               <span className="stat-num">
                 10K<span className="accent">+</span>
               </span>
-              <span className="stat-label">Buyers & sellers reached</span>
+              <span className="stat-label">Users, buyers & sellers supported</span>
             </div>
             <span className="stat-sep">—</span>
             <div className="stat-item">
               <span className="stat-num">
                 95<span className="accent">%</span>
               </span>
-              <span className="stat-label">Production time cut via AI</span>
+              <span className="stat-label">Production time cut in core workflows</span>
             </div>
             <span className="stat-sep">—</span>
             <div className="stat-item">
@@ -134,18 +138,21 @@ export default function HomePage() {
             </div>
             <div className="about-content">
               <p className="about-lead">
-                I build things from the ground up and see them through to
-                production — across mobile, web, and backend.
+                I like building products where the architecture, the user
+                experience, and the business outcome all matter at the same
+                time.
               </p>
               <p className="about-body">
                 Five years shipping across e-commerce, logistics, and B2B. My
                 work spans Flutter, TypeScript, and Node.js, but the common
-                thread is ownership — I care about the whole thing: the
-                architecture, the user experience, the metrics after it ships.
+                thread is ownership — I care about the whole system: the
+                architecture, the user experience, the rollout, and the
+                metrics after it ships.
               </p>
               <p className="about-body">
-                I&apos;m drawn to problems where the engineering and the product
-                decision are the same conversation.
+                I&apos;m drawn to product surfaces that cut across platforms,
+                where mobile, web, backend, and operational reality all have
+                to line up for the experience to work.
               </p>
             </div>
           </div>
@@ -160,7 +167,7 @@ export default function HomePage() {
             </div>
             <div className="stack-rows">
               <div className="stack-row">
-                <span className="stack-cat">Languages</span>
+                <span className="stack-cat">Core languages</span>
                 <div className="stack-tags">
                   <span>TypeScript</span>
                   <span>Dart</span>
@@ -169,7 +176,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="stack-row">
-                <span className="stack-cat">Mobile & Frontend</span>
+                <span className="stack-cat">Product surfaces</span>
                 <div className="stack-tags">
                   <span>Flutter</span>
                   <span>React</span>
@@ -178,7 +185,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="stack-row">
-                <span className="stack-cat">Backend</span>
+                <span className="stack-cat">Services & data</span>
                 <div className="stack-tags">
                   <span>Node.js</span>
                   <span>NestJS</span>
@@ -187,12 +194,14 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="stack-row">
-                <span className="stack-cat">Cloud & Infra</span>
+                <span className="stack-cat">Systems & delivery</span>
                 <div className="stack-tags">
                   <span>AWS Lambda</span>
                   <span>Firebase</span>
                   <span>Docker</span>
                   <span>CI/CD</span>
+                  <span>Offline-first</span>
+                  <span>AI Workflows</span>
                 </div>
               </div>
             </div>
@@ -211,25 +220,87 @@ export default function HomePage() {
                 <span className="work-num">01</span>
                 <div className="work-body">
                   <div className="work-top">
-                    <h3 className="work-title">AI Campaign Generator</h3>
+                    <h3 className="work-title">Yandeh Product Suite</h3>
                     <span className="work-period">2025 — Present</span>
                   </div>
                   <p className="work-company">
-                    Yandeh · Business Tech in Retail · $100M GMV
+                    <a
+                      href="https://yandeh.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="work-company-link"
+                    >
+                      Yandeh
+                    </a>{" "}
+                    · Business Tech in Retail · $100M GMV
                   </p>
                   <p className="work-desc">
-                    Architected and shipped an AI-driven agentic workflow
-                    embedded in the core e-commerce platform to generate
-                    campaign-ready promotional images — reducing production
-                    time by 95% (60 min → 3 min). Owned the payment flow
-                    end-to-end across Flutter and Node.js, increasing
-                    conversion by 10%.
+                    Product work across multiple surfaces inside the same
+                    company, spanning campaign tooling, commerce experiences,
+                    and newer care flows — with shared responsibility for the
+                    systems that made them reliable to ship and evolve.
                   </p>
+                  <div className="work-projects">
+                    <div className="work-project work-project--featured">
+                      <div className="work-project-featured-copy">
+                        <span className="work-project-label">Midia Pro</span>
+                        <p className="work-project-desc">
+                          Architected and shipped a workflow that turned
+                          campaign inputs into promotion-ready assets inside
+                          the core platform, reducing production time by 95%
+                          and making iteration much faster for commercial
+                          teams.
+                        </p>
+                      </div>
+                      <WorkVideoPreview
+                        src="https://static-b2b.yandeh.com.br/tabloide_maker/videos/midia-pro-mkt.mp4"
+                        title="Midia Pro video"
+                      />
+                    </div>
+                    <div className="work-project work-project--secondary">
+                      <span className="work-project-label">SmartCare</span>
+                      <p className="work-project-desc">
+                        Newer product surface in the suite, shaped as part of
+                        the broader platform evolution with the same concern
+                        for reusable foundations, consistent flows, and room
+                        to scale.
+                      </p>
+                    </div>
+                    <div className="work-project work-project--secondary">
+                      <div className="work-split">
+                        <div className="work-split-copy">
+                          <span className="work-project-label">
+                            Abastece Shop
+                          </span>
+                          <p className="work-project-desc">
+                            Commerce-facing app work tied to the wider retail
+                            operation, with focus on dependable customer flows
+                            and product structure that could keep pace with
+                            business growth.
+                          </p>
+                        </div>
+                        <div className="work-side-media">
+                          <a
+                            href="https://play.google.com/store/apps/details?id=br.com.yandeh.compras&hl=pt_BR"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="work-shot-link"
+                            aria-label="Abrir Abastece Shop na Play Store"
+                          >
+                            <Image
+                              src={abasteceShopImage}
+                              alt="Screenshot do app Abastece Shop"
+                              className="work-shot-image"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="work-tags">
                     <span>TypeScript</span>
                     <span>Nuxt</span>
                     <span>Flutter</span>
-                    <span>Node.js</span>
                     <span>AI Agents</span>
                   </div>
                 </div>
@@ -239,24 +310,33 @@ export default function HomePage() {
                 <span className="work-num">02</span>
                 <div className="work-body">
                   <div className="work-top">
-                    <h3 className="work-title">Logistics CRM at Scale</h3>
+                    <h3 className="work-title">Seller App</h3>
                     <span className="work-period">2024 — 2025</span>
                   </div>
                   <p className="work-company">
-                    Gruppe · Software House · 50 logistics clients
+                    <a
+                      href="https://gruppe.com.br/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="work-company-link"
+                    >
+                      Gruppe
+                    </a>{" "}
+                    · Software House · 50 logistics clients
                   </p>
                   <p className="work-desc">
-                    Built and maintained a CRM processing 100+ orders/day and
-                    $1M+/month. Engineered a serverless Node.js backend that
-                    cut infrastructure costs by 30%. Translated complex
-                    logistics requirements into a technical roadmap — 100%
-                    on-time delivery for every milestone.
+                    Built and maintained a seller-facing CRM handling 100+
+                    orders/day and over $1M/month in operations. Improved the
+                    system from both sides: product behavior for operators and
+                    backend foundations that cut infrastructure costs by 30%
+                    and made complex pricing logic possible.
                   </p>
                   <div className="work-tags">
                     <span>Node.js</span>
                     <span>AWS Lambda</span>
                     <span>Flutter</span>
                     <span>NoSQL</span>
+                    <span>Rules Engine</span>
                   </div>
                 </div>
               </div>
@@ -264,25 +344,55 @@ export default function HomePage() {
               <div className="work-item">
                 <span className="work-num">03</span>
                 <div className="work-body">
-                  <div className="work-top">
-                    <h3 className="work-title">Offline-First Field Platform</h3>
-                    <span className="work-period">2023 — 2024</span>
+                  <div className="work-split">
+                    <div className="work-split-copy">
+                      <div className="work-top">
+                        <h3 className="work-title">Logi360 - Checklist</h3>
+                      </div>
+                      <p className="work-company">
+                        <a
+                          href="https://www.tecadilabs.com.br/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="work-company-link"
+                        >
+                          Tecadi Labs
+                        </a>{" "}
+                        · Logistics · 300K+ m² warehousing
+                      </p>
+                      <p className="work-desc">
+                        Delivered an offline-first checklist platform used in
+                        100+ daily field operations, with configurable
+                        templates, resilient sync, and a reusable white-label
+                        structure. Integrated Google ML Kit to support cargo
+                        inspections and cut manual verification time by 75%.
+                      </p>
+                    </div>
+                    <div className="work-side-media">
+                      <span className="work-period work-period--stacked">
+                        2023 — 2024
+                      </span>
+                      <a
+                        href="https://play.google.com/store/apps/details?id=br.com.tecadilabs.checklist_app&hl=pt_BR"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="work-shot-link work-shot-link--wide"
+                        aria-label="Abrir Logi360 Checklist na Play Store"
+                      >
+                        <Image
+                          src={checklistImage}
+                          alt="Screenshot do app Logi360 Checklist"
+                          className="work-shot-image"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <p className="work-company">
-                    Tecadi · Logistics · 300K+ m² warehousing
-                  </p>
-                  <p className="work-desc">
-                    Delivered a mobile checklist platform running 100+ daily
-                    field operations. Built for resilient offline sync in
-                    low-connectivity environments. Integrated Google ML Kit for
-                    real-time cargo inspections, cutting manual verification
-                    time by 75%.
-                  </p>
                   <div className="work-tags">
                     <span>Flutter</span>
                     <span>ML Kit</span>
                     <span>Offline-first</span>
                     <span>Clean Architecture</span>
+                    <span>White-label</span>
                   </div>
                 </div>
               </div>
@@ -291,22 +401,32 @@ export default function HomePage() {
                 <span className="work-num">04</span>
                 <div className="work-body">
                   <div className="work-top">
-                    <h3 className="work-title">B2B Management Suite</h3>
+                    <h3 className="work-title">GASS App</h3>
                     <span className="work-period">2021 — 2023</span>
                   </div>
                   <p className="work-company">
-                    GASS · Restaurant Management Consultancy
+                    <a
+                      href="https://sistemagass.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="work-company-link"
+                    >
+                      GASS
+                    </a>{" "}
+                    · Restaurant Management Consultancy
                   </p>
                   <p className="work-desc">
-                    Built a Flutter app consolidating 60+ management tools into
-                    a single experience for 200+ B2B clients. Delivered no-code
-                    MVPs to validate new workflows quickly, then migrated the
-                    best-performing solutions into the product roadmap.
+                    Built a Flutter app that consolidated 60+ management tools
+                    into one experience for 200+ B2B clients. Used no-code
+                    MVPs to validate new workflows before moving the best ones
+                    into the product roadmap, and supported adoption by
+                    training consultants on the rollout.
                   </p>
                   <div className="work-tags">
                     <span>Flutter</span>
                     <span>Firebase</span>
                     <span>No-code MVPs</span>
+                    <span>Enablement</span>
                   </div>
                 </div>
               </div>
