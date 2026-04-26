@@ -1,4 +1,4 @@
-import { handleMcpRequest } from "know-me/mcp";
+import { handleMcpRequest } from "@glgio/know-me/mcp";
 import { getProfile } from "@/lib/profile";
 
 export const runtime = "nodejs";

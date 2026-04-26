@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",
-    "know-me": "file:../know-me",
+    "@glgio/know-me": "file:../know-me",
     "next": "^15.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

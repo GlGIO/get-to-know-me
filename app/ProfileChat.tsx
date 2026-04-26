@@ -1,6 +1,6 @@
 "use client";
 
-import { ChatWidget } from "know-me/widget";
+import { ChatWidget } from "@glgio/know-me/widget";
 
 export default function ProfileChat() {
   return (

@@ -1,7 +1,7 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { parseProfile, buildContext, type KnowMeProfile } from "know-me/core";
+import { parseProfile, buildContext, type KnowMeProfile } from "@glgio/know-me/core";
 
 let cached: { profile: KnowMeProfile; context: string } | null = null;
 
